@@ -28,6 +28,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
+                implementation(libs.usb.library.core)
                 implementation(libs.kotlinx.datetime)
                 implementation(libs.kotlinx.coroutines.core)
             }
@@ -40,11 +41,13 @@ kotlin {
         }
         val jvmMain by getting {
             dependencies {
+                implementation(libs.usb.library.jvm)
                 implementation(libs.kotlinx.coroutines.core.jvm)
             }
         }
         val androidMain by getting {
             dependencies {
+                implementation(libs.usb.library.android)
                 implementation(libs.kotlinx.coroutines.android)
             }
         }

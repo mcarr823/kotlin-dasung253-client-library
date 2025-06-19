@@ -5,6 +5,8 @@ android-minSdk = "24"
 android-compileSdk = "34"
 kotlinxDatetime = "0.6.2"
 kotlinxCoroutinesCore = "1.10.2"
+usb = "1.0.0"
+
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDatetime" }
@@ -12,6 +14,9 @@ kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutine
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
 kotlinx-coroutines-core-jvm = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm", version.ref = "kotlinxCoroutinesCore" }
 kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesCore" }
+usb-library-core = { module = "dev.mcarr.usb:library", version.ref = "usb" }
+usb-library-jvm = { module = "dev.mcarr.usb:library-jvm", version.ref = "usb" }
+usb-library-android = { module = "dev.mcarr.usb:library-android", version.ref = "usb" }
 
 [plugins]
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
