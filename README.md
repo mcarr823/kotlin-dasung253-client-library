@@ -40,6 +40,10 @@ println("Enhancement: ${params.enhancement}")
 println("Display mode: ${params.displayMode}")
 ```
 
+## API Documentation
+
+Javadoc can be found [here](https://mcarr823.github.io/kotlin-dasung253-client-library/).
+
 ## Setup
 
 The setup instructions below assume that you're building a gradle project, with a TOML file for dependency management and KTS files for gradle scripts.
@@ -104,5 +108,5 @@ kotlin {
 - implement the monitor detection function and logic
 - add support for other platforms
 - list required java version
-- exclude unsupported platforms
+
 - more docs
