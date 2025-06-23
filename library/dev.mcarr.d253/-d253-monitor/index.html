@@ -46,7 +46,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-1.0.0        </div>
+1.0.1        </div>
         <div class="navigation-controls">
         <div class="filter-section filter-section_loading" id="filter-section">
                 <button class="platform-tag platform-selector common-like" data-active=""
@@ -108,7 +108,7 @@
   <div class="breadcrumbs"><a href="../../../index.html">library</a><span class="delimiter">/</span><a href="../index.html">dev.mcarr.d253</a><span class="delimiter">/</span><span class="current">D253Monitor</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>D253Monitor</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">D253Monitor</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">port<span class="token operator">: </span><a href="../-d253-serial-port/index.html">D253SerialPort</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Class used for controlling a Dasung253 monitor.</p><p class="paragraph">Provides functions for changing all of the monitor's settings and performing other common operations.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":library/commonMain" data-filterable-set=":library/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>port</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Serial port through which this class interacts with the monitor</p></div></div></div></div></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">D253Monitor</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">port<span class="token operator">: </span><a href="../-d253-serial-port/index.html">D253SerialPort</a></span></span><span class="token punctuation">)</span> : <a href="../../dev.mcarr.d253.interfaces/-i-d253-monitor/index.html">ID253Monitor</a></div><p class="paragraph">Class used for controlling a Dasung253 monitor.</p><p class="paragraph">Provides functions for changing all of the monitor's settings and performing other common operations.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":library/commonMain" data-filterable-set=":library/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>port</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Serial port through which this class interacts with the monitor</p></div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -144,7 +144,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="clear-ghosting.html"><span class="token function">clearGhosting</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-d253-response/index.html">D253Response</a></div><div class="brief "><p class="paragraph">Refreshes the screen to clear any ghosting.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="clear-ghosting.html"><span class="token function">clearGhosting</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-d253-response/index.html">D253Response</a></div><div class="brief "><p class="paragraph">Refreshes the screen to clear any ghosting.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -159,7 +159,67 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-capabilities.html"><span class="token function">getCapabilities</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../dev.mcarr.d253.data/-d253-capabilities/index.html">D253Capabilities</a></div><div class="brief "><p class="paragraph">Queries the monitor to find out which features it supports.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="get-capabilities.html"><span class="token function">getCapabilities</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../dev.mcarr.d253.data/-d253-capabilities/index.html">D253Capabilities</a></div><div class="brief "><p class="paragraph">Queries the monitor to find out which features it supports.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1400600262%2FFunctions%2F-654899660" anchor-label="getDisplayMode" id="1400600262%2FFunctions%2F-654899660" data-filterable-set=":library/commonMain"></a>
+          <div class="table-row" data-filterable-current=":library/commonMain" data-filterable-set=":library/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-display-mode.html"><span>get</span><wbr></wbr><span>Display</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1400600262%2FFunctions%2F-654899660"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="get-display-mode.html"><span class="token function">getDisplayMode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../dev.mcarr.d253.enums/-d253-display-mode/index.html">D253DisplayMode</a></div><div class="brief "><p class="paragraph">Gets the display mode of the monitor.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="291664159%2FFunctions%2F-654899660" anchor-label="getEnhancement" id="291664159%2FFunctions%2F-654899660" data-filterable-set=":library/commonMain"></a>
+          <div class="table-row" data-filterable-current=":library/commonMain" data-filterable-set=":library/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-enhancement.html"><span>get</span><wbr></wbr><span><span>Enhancement</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="291664159%2FFunctions%2F-654899660"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="get-enhancement.html"><span class="token function">getEnhancement</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Gets the value of the enhancement setting from the monitor.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="547763490%2FFunctions%2F-654899660" anchor-label="getFrontlight" id="547763490%2FFunctions%2F-654899660" data-filterable-set=":library/commonMain"></a>
+          <div class="table-row" data-filterable-current=":library/commonMain" data-filterable-set=":library/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-frontlight.html"><span>get</span><wbr></wbr><span><span>Frontlight</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="547763490%2FFunctions%2F-654899660"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="get-frontlight.html"><span class="token function">getFrontlight</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Gets the value of the front light setting from the monitor.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1556453077%2FFunctions%2F-654899660" anchor-label="getLight" id="1556453077%2FFunctions%2F-654899660" data-filterable-set=":library/commonMain"></a>
+          <div class="table-row" data-filterable-current=":library/commonMain" data-filterable-set=":library/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-light.html"><span>get</span><wbr></wbr><span><span>Light</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1556453077%2FFunctions%2F-654899660"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="get-light.html"><span class="token function">getLight</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Gets the value of the light setting from the monitor.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -174,7 +234,67 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-parameters.html"><span class="token function">getParameters</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../dev.mcarr.d253.data/-d253-parameters/index.html">D253Parameters</a></div><div class="brief "><p class="paragraph">Retrieves all known settings from the monitor.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="get-parameters.html"><span class="token function">getParameters</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../dev.mcarr.d253.data/-d253-parameters/index.html">D253Parameters</a></div><div class="brief "><p class="paragraph">Retrieves all known settings from the monitor.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-679275324%2FFunctions%2F-654899660" anchor-label="getSpeed" id="-679275324%2FFunctions%2F-654899660" data-filterable-set=":library/commonMain"></a>
+          <div class="table-row" data-filterable-current=":library/commonMain" data-filterable-set=":library/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-speed.html"><span>get</span><wbr></wbr><span><span>Speed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-679275324%2FFunctions%2F-654899660"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="get-speed.html"><span class="token function">getSpeed</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Gets the value of the speed setting from the monitor.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="968999351%2FFunctions%2F-654899660" anchor-label="getTemperature" id="968999351%2FFunctions%2F-654899660" data-filterable-set=":library/commonMain"></a>
+          <div class="table-row" data-filterable-current=":library/commonMain" data-filterable-set=":library/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-temperature.html"><span>get</span><wbr></wbr><span><span>Temperature</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="968999351%2FFunctions%2F-654899660"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="get-temperature.html"><span class="token function">getTemperature</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Gets the monitor's color temperature.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1612252640%2FFunctions%2F-654899660" anchor-label="getThreshold" id="-1612252640%2FFunctions%2F-654899660" data-filterable-set=":library/commonMain"></a>
+          <div class="table-row" data-filterable-current=":library/commonMain" data-filterable-set=":library/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-threshold.html"><span>get</span><wbr></wbr><span><span>Threshold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1612252640%2FFunctions%2F-654899660"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="get-threshold.html"><span class="token function">getThreshold</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Gets the value of the threshold setting from the monitor.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1908107731%2FFunctions%2F-654899660" anchor-label="getVersion" id="1908107731%2FFunctions%2F-654899660" data-filterable-set=":library/commonMain"></a>
+          <div class="table-row" data-filterable-current=":library/commonMain" data-filterable-set=":library/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-version.html"><span>get</span><wbr></wbr><span><span>Version</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1908107731%2FFunctions%2F-654899660"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="get-version.html"><span class="token function">getVersion</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Gets the model (mcu version) of the monitor.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -189,7 +309,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-display-mode.html"><span class="token function">setDisplayMode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mode<span class="token operator">: </span><a href="../../dev.mcarr.d253.enums/-d253-display-mode/index.html">D253DisplayMode</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-d253-response/index.html">D253Response</a></div><div class="brief "><p class="paragraph">Sets the monitor's display mode.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="set-display-mode.html"><span class="token function">setDisplayMode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mode<span class="token operator">: </span><a href="../../dev.mcarr.d253.enums/-d253-display-mode/index.html">D253DisplayMode</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-d253-response/index.html">D253Response</a></div><div class="brief "><p class="paragraph">Sets the monitor's display mode.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -204,7 +324,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-enhancement.html"><span class="token function">setEnhancement</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-d253-response/index.html">D253Response</a></div><div class="brief "><p class="paragraph">Sets the value of the enhancement setting on the monitor.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="set-enhancement.html"><span class="token function">setEnhancement</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-d253-response/index.html">D253Response</a></div><div class="brief "><p class="paragraph">Sets the value of the enhancement setting on the monitor.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -219,7 +339,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-frontlight.html"><span class="token function">setFrontlight</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-d253-response/index.html">D253Response</a></div><div class="brief "><p class="paragraph">Sets the value of the front light setting on the monitor.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="set-frontlight.html"><span class="token function">setFrontlight</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-d253-response/index.html">D253Response</a></div><div class="brief "><p class="paragraph">Sets the value of the front light setting on the monitor.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -234,7 +354,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-light.html"><span class="token function">setLight</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-d253-response/index.html">D253Response</a></div><div class="brief "><p class="paragraph">Sets the value of the light setting on the monitor.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="set-light.html"><span class="token function">setLight</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-d253-response/index.html">D253Response</a></div><div class="brief "><p class="paragraph">Sets the value of the light setting on the monitor.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -249,7 +369,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-rtc.html"><span class="token function">setRtc</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><span data-unresolved-link="kotlinx.datetime/Instant///PointingToDeclaration/">Instant</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-d253-response/index.html">D253Response</a></div><div class="brief "><p class="paragraph">Sets the RTC (real-time clock) of the monitor.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="set-rtc.html"><span class="token function">setRtc</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><span data-unresolved-link="kotlinx.datetime/Instant///PointingToDeclaration/">Instant</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-d253-response/index.html">D253Response</a></div><div class="brief "><p class="paragraph">Sets the RTC (real-time clock) of the monitor.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -264,7 +384,22 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-speed.html"><span class="token function">setSpeed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-d253-response/index.html">D253Response</a></div><div class="brief "><p class="paragraph">Sets the value of the speed setting on the monitor.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="set-speed.html"><span class="token function">setSpeed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-d253-response/index.html">D253Response</a></div><div class="brief "><p class="paragraph">Sets the value of the speed setting on the monitor.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1348041377%2FFunctions%2F-654899660" anchor-label="setTemperature" id="1348041377%2FFunctions%2F-654899660" data-filterable-set=":library/commonMain"></a>
+          <div class="table-row" data-filterable-current=":library/commonMain" data-filterable-set=":library/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-temperature.html"><span>set</span><wbr></wbr><span><span>Temperature</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1348041377%2FFunctions%2F-654899660"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="set-temperature.html"><span class="token function">setTemperature</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-d253-response/index.html">D253Response</a></div><div class="brief "><p class="paragraph">Sets the monitor's color temperature.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -279,7 +414,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-threshold.html"><span class="token function">setThreshold</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-d253-response/index.html">D253Response</a></div><div class="brief "><p class="paragraph">Sets the value of the threshold setting on the monitor.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="set-threshold.html"><span class="token function">setThreshold</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-d253-response/index.html">D253Response</a></div><div class="brief "><p class="paragraph">Sets the value of the threshold setting on the monitor.</p></div></div></div>
                 </div>
               </div>
             </div>
