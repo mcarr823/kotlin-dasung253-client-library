@@ -1,8 +1,5 @@
 package dev.mcarr.d253.interfaces
 
-import dev.mcarr.d253.D253Monitor
-import dev.mcarr.d253.D253SerialPort
-
 /**
  * Interface defining the commands which any port-listing class should implement.
  * */
@@ -17,9 +14,9 @@ interface ID253SerialPortList {
      * If you don't need that level of fine-grained control, you should
      * consider using the getMonitors() function instead.
      *
-     * @return List of D253SerialPort objects
+     * @return List of ID253SerialPort objects
      *
-     * @see D253SerialPort
+     * @see ID253SerialPort
      * @see getMonitors
      * */
     fun get(): List<ID253SerialPort>
@@ -31,10 +28,10 @@ interface ID253SerialPortList {
      * comms and provide a simpler interface for interacting with the
      * monitor.
      *
-     * @return List of D253Monitor objects
+     * @return List of ID253Monitor objects
      *
-     * @see D253Monitor
+     * @see ID253Monitor
      * */
-    fun getMonitors(): List<D253Monitor>
+    fun getMonitors(): List<ID253Monitor>
 
 }
