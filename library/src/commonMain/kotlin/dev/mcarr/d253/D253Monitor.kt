@@ -38,6 +38,7 @@ class D253Monitor(
         val enhancement = getEnhancement()
         val displayMode = getDisplayMode()
         val version = getVersion()
+        val temperature = getTemperature()
         return D253Parameters(
             threshold = threshold,
             light = light,
@@ -45,7 +46,8 @@ class D253Monitor(
             frontlight = frontlight,
             enhancement = enhancement,
             displayMode = displayMode,
-            version = version
+            version = version,
+            temperature = temperature
         )
     }
 
@@ -196,6 +198,27 @@ class D253Monitor(
      * */
     suspend fun setEnhancement(value: Int): D253Response =
         setParameterValue(D253Attribute.ENHANCEMENT, value)
+
+    /**
+     * Gets the monitor's color temperature.
+     *
+     * @return Integer representing the value of this setting
+     * */
+    private suspend fun getTemperature(): Int =
+        getParameterValue(D253Attribute.TEMPERATURE)
+
+    /**
+     * Sets the monitor's color temperature.
+     *
+     * @param value Value to set on the monitor
+     *
+     * @return D253Response object which contains the raw response from
+     * the monitor
+     *
+     * @see D253Response
+     * */
+    suspend fun setTemperature(value: Int): D253Response =
+        setParameterValue(D253Attribute.TEMPERATURE, value)
 
     /**
      * Gets the display mode of the monitor.

@@ -23,6 +23,7 @@ import dev.mcarr.d253.enums.D253DisplayMode
  * @param version MCU version of the monitor. Used to determine what features
  * the given monitor supports, since not all Dasung253 monitors have the same
  * features
+ * @param temperature Color temperature of the display
  *
  * @see D253DisplayMode
  * @see D253Capabilities
@@ -34,5 +35,6 @@ data class D253Parameters(
     val frontlight: Int,
     val enhancement: Int,
     val displayMode: D253DisplayMode,
-    val version: Int
+    val version: Int,
+    val temperature: Int
 )
