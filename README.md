@@ -69,7 +69,7 @@ dependencyResolutionManagement {
 # libs.versions.toml
 
 [versions]
-d253 = "1.0.0"
+d253 = "1.0.1"
 
 [libraries]
 d253-library-core = { module = "dev.mcarr.d253:library", version.ref = "d253" }
