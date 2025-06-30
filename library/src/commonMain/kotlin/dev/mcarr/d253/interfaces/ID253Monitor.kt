@@ -69,12 +69,9 @@ interface ID253Monitor {
      *
      * @param value Value to set on the monitor
      *
-     * @return D253Response object which contains the raw response from
-     * the monitor
-     *
-     * @see D253Response
+     * @return True if successful
      * */
-    suspend fun setThreshold(value: Int): D253Response
+    suspend fun setThreshold(value: Int): Boolean
 
     /**
      * Gets the value of the light setting from the monitor.
@@ -88,12 +85,9 @@ interface ID253Monitor {
      *
      * @param value Value to set on the monitor
      *
-     * @return D253Response object which contains the raw response from
-     * the monitor
-     *
-     * @see D253Response
+     * @return True if successful
      * */
-    suspend fun setLight(value: Int): D253Response
+    suspend fun setLight(value: Int): Boolean
 
     /**
      * Gets the value of the speed setting from the monitor.
@@ -107,12 +101,9 @@ interface ID253Monitor {
      *
      * @param value Value to set on the monitor
      *
-     * @return D253Response object which contains the raw response from
-     * the monitor
-     *
-     * @see D253Response
+     * @return True if successful
      * */
-    suspend fun setSpeed(value: Int): D253Response
+    suspend fun setSpeed(value: Int): Boolean
 
     /**
      * Gets the value of the front light setting from the monitor.
@@ -126,12 +117,9 @@ interface ID253Monitor {
      *
      * @param value Value to set on the monitor
      *
-     * @return D253Response object which contains the raw response from
-     * the monitor
-     *
-     * @see D253Response
+     * @return True if successful
      * */
-    suspend fun setFrontlight(value: Int): D253Response
+    suspend fun setFrontlight(value: Int): Boolean
 
     /**
      * Gets the value of the enhancement setting from the monitor.
@@ -145,12 +133,9 @@ interface ID253Monitor {
      *
      * @param value Value to set on the monitor
      *
-     * @return D253Response object which contains the raw response from
-     * the monitor
-     *
-     * @see D253Response
+     * @return True if successful
      * */
-    suspend fun setEnhancement(value: Int): D253Response
+    suspend fun setEnhancement(value: Int): Boolean
 
     /**
      * Gets the monitor's color temperature.
@@ -164,12 +149,9 @@ interface ID253Monitor {
      *
      * @param value Value to set on the monitor
      *
-     * @return D253Response object which contains the raw response from
-     * the monitor
-     *
-     * @see D253Response
+     * @return True if successful
      * */
-    suspend fun setTemperature(value: Int): D253Response
+    suspend fun setTemperature(value: Int): Boolean
 
     /**
      * Gets the display mode of the monitor.
@@ -185,13 +167,11 @@ interface ID253Monitor {
      *
      * @param mode New display mode to set
      *
-     * @return D253Response object which contains the raw response from
-     * the monitor
+     * @return True if successful
      *
      * @see D253DisplayMode
-     * @see D253Response
      * */
-    suspend fun setDisplayMode(mode: D253DisplayMode): D253Response
+    suspend fun setDisplayMode(mode: D253DisplayMode): Boolean
 
     /**
      * Gets the model (mcu version) of the monitor.

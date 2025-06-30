@@ -123,11 +123,8 @@ class D253SerialPortTest {
         if (!shouldRunAutomatically) return
 
         runTest {
-            val value = port.setDisplayMode(D253DisplayMode.TEXT)
-            assertEquals(D253RequestCommand.SET_PARAMETER.value, value.cmd)
-            assertEquals(D253Attribute.DISPLAY_MODE.value, value.arg)
-            assertEquals("00", value.data1)
-            assertEquals("00", value.data2)
+            val success = port.setDisplayMode(D253DisplayMode.TEXT)
+            assert(success)
         }
 
     }

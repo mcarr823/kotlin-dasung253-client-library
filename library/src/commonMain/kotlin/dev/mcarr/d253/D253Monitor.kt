@@ -67,46 +67,46 @@ class D253Monitor(
     override suspend fun getThreshold(): Int =
         getParameterValue(D253Attribute.THRESHOLD)
 
-    override suspend fun setThreshold(value: Int): D253Response =
-        setParameterValue(D253Attribute.THRESHOLD, value)
+    override suspend fun setThreshold(value: Int): Boolean =
+        setParameter(D253Attribute.THRESHOLD, value)
 
     override suspend fun getLight(): Int =
         getParameterValue(D253Attribute.LIGHT)
 
-    override suspend fun setLight(value: Int): D253Response =
-        setParameterValue(D253Attribute.LIGHT, value)
+    override suspend fun setLight(value: Int): Boolean =
+        setParameter(D253Attribute.LIGHT, value)
 
     override suspend fun getSpeed(): Int =
         getParameterValue(D253Attribute.SPEED)
 
-    override suspend fun setSpeed(value: Int): D253Response =
-        setParameterValue(D253Attribute.SPEED, value)
+    override suspend fun setSpeed(value: Int): Boolean =
+        setParameter(D253Attribute.SPEED, value)
 
     override suspend fun getFrontlight(): Int =
         getParameterValue(D253Attribute.FRONTLIGHT)
 
-    override suspend fun setFrontlight(value: Int): D253Response =
-        setParameterValue(D253Attribute.FRONTLIGHT, value)
+    override suspend fun setFrontlight(value: Int): Boolean =
+        setParameter(D253Attribute.FRONTLIGHT, value)
 
     override suspend fun getEnhancement(): Int =
         getParameterValue(D253Attribute.ENHANCEMENT)
 
-    override suspend fun setEnhancement(value: Int): D253Response =
-        setParameterValue(D253Attribute.ENHANCEMENT, value)
+    override suspend fun setEnhancement(value: Int): Boolean =
+        setParameter(D253Attribute.ENHANCEMENT, value)
 
     override suspend fun getTemperature(): Int =
         getParameterValue(D253Attribute.TEMPERATURE)
 
-    override suspend fun setTemperature(value: Int): D253Response =
-        setParameterValue(D253Attribute.TEMPERATURE, value)
+    override suspend fun setTemperature(value: Int): Boolean =
+        setParameter(D253Attribute.TEMPERATURE, value)
 
     override suspend fun getDisplayMode(): D253DisplayMode {
         val mode = getParameterValue(D253Attribute.DISPLAY_MODE)
         return D253DisplayMode.entries.first { it.value == mode }
     }
 
-    override suspend fun setDisplayMode(mode: D253DisplayMode): D253Response =
-        setParameterValue(D253Attribute.DISPLAY_MODE, mode.value)
+    override suspend fun setDisplayMode(mode: D253DisplayMode): Boolean =
+        setParameter(D253Attribute.DISPLAY_MODE, mode.value)
 
     override suspend fun getVersion(): Int =
         getParameterValue(D253Attribute.VERSION)
@@ -180,6 +180,29 @@ class D253Monitor(
      * */
     private suspend fun setParameterValue(command: D253Attribute, value: Instant): D253Response {
         return port.write(command, value)
+    }
+
+    /**
+     * Sets the value of the given setting on the monitor.
+     *
+     * @param command Setting to change
+     * @param value Value to set on the monitor
+     *
+     * @return True if the response from the monitor matches the
+     * expected return value, which should indicate that the
+     * command was successful
+     *
+     * @see ID253Command
+     * */
+    private suspend fun setParameter(command: ID253Command, value: Int): Boolean {
+
+        val response = setParameterValue(command, value)
+
+        return response.cmd == command.value &&
+                response.arg.toInt() == value &&
+                response.data1.toInt() == 0 &&
+                response.data2.toInt() == 0
+
     }
 
 }
