@@ -1,5 +1,10 @@
 # Kotlin Dasung253 Client Library
 
+[![CI](actions/workflows/gradle.yml/badge.svg)](actions/workflows/gradle.yml)
+[![Javadoc](actions/workflows/publish-javadoc.yml/badge.svg)](actions/workflows/publish-javadoc.yml)
+[![Maven](actions/workflows/publish.yml/badge.svg)](actions/workflows/publish.yml)
+
+
 ## What is it?
 
 This is a KMM (Kotlin Multiplatform Module) library which allows a Kotlin project to interact with a Dasung 253 monitor via its USB port.
