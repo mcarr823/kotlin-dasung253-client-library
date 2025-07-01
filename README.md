@@ -3,6 +3,7 @@
 [![CI](https://github.com/mcarr823/kotlin-dasung253-client-library/actions/workflows/gradle.yml/badge.svg)](https://github.com/mcarr823/kotlin-dasung253-client-library/actions/workflows/gradle.yml)
 [![Javadoc](https://github.com/mcarr823/kotlin-dasung253-client-library/actions/workflows/publish-javadoc.yml/badge.svg)](https://github.com/mcarr823/kotlin-dasung253-client-library/actions/workflows/publish-javadoc.yml)
 [![Maven](https://github.com/mcarr823/kotlin-dasung253-client-library/actions/workflows/publish.yml/badge.svg)](https://github.com/mcarr823/kotlin-dasung253-client-library/actions/workflows/publish.yml)
+![GitHub Release](https://img.shields.io/github/v/release/mcarr823/kotlin-dasung253-client-library?include_prereleases&display_name=tag)
 
 
 ## What is it?
