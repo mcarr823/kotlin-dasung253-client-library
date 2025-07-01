@@ -1,8 +1,8 @@
 # Kotlin Dasung253 Client Library
 
-[![CI](actions/workflows/gradle.yml/badge.svg)](actions/workflows/gradle.yml)
-[![Javadoc](actions/workflows/publish-javadoc.yml/badge.svg)](actions/workflows/publish-javadoc.yml)
-[![Maven](actions/workflows/publish.yml/badge.svg)](actions/workflows/publish.yml)
+[![CI](https://github.com/mcarr823/kotlin-dasung253-client-library/actions/workflows/gradle.yml/badge.svg)](https://github.com/mcarr823/kotlin-dasung253-client-library/actions/workflows/gradle.yml)
+[![Javadoc](https://github.com/mcarr823/kotlin-dasung253-client-library/actions/workflows/publish-javadoc.yml/badge.svg)](https://github.com/mcarr823/kotlin-dasung253-client-library/actions/workflows/publish-javadoc.yml)
+[![Maven](https://github.com/mcarr823/kotlin-dasung253-client-library/actions/workflows/publish.yml/badge.svg)](https://github.com/mcarr823/kotlin-dasung253-client-library/actions/workflows/publish.yml)
 
 
 ## What is it?
